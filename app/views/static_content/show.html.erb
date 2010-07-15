@@ -14,5 +14,9 @@
     <%= render :partial => "shared/taxonomies" %>
   <% end %>
 <% end %>
+
+<%- if @page.show_title? -%>
 <h2><%=@page.title%></h2>
+<%- end -%>
+
 <%=@page.body%>
